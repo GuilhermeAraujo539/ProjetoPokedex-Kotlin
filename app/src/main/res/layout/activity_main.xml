@@ -12,7 +12,7 @@
     <FrameLayout
         android:id="@+id/white_screen"
         android:layout_width="340dp"
-        android:layout_height="wrap_content"
+        android:layout_height="340dp"
         android:layout_marginTop="85dp"
         android:background="@android:color/white"
         android:elevation="6dp"
@@ -63,30 +63,37 @@
         android:id="@+id/search_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="14dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="25dp"
+        android:paddingStart="8dp"
         android:paddingEnd="24dp">
+
 
         <EditText
             android:id="@+id/inputPokemon"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:hint="Digite o nome do Pokémon"
+            android:textColorHint="#000000"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:imeOptions="actionSearch"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:textColor="@android:color/black" />
+            android:inputType="text"
+            android:elevation="4dp" />
 
         <ImageButton
             android:id="@+id/btnBuscar"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:background="@android:color/transparent"
+            android:layout_width="28dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_ripple"
+            android:src="@drawable/search"
             android:contentDescription="Buscar"
-            android:src="@drawable/search" />
+            />
+
     </LinearLayout>
 
 </LinearLayout>
